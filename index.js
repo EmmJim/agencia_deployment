@@ -40,7 +40,7 @@ app.use(express.static('public'));
 app.use('/', router);
 
 //Puerto y Host para la app
-const host = process.env.HOST || '0.0.0.0';
+const host = process.env.HOST;
 
 app.listen(port, host, () =>{
     console.log(`El Servidor esta funcionando en el puerto ${port}`);
